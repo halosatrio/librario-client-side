@@ -1,0 +1,73 @@
+{
+  "_id": "9786021318485",
+  "Judul": "24 Jam Bersama Gaspar, Sebuah Cerita Detektif",
+  "Bahasa": "Indonesia",
+  "Genre": "Novel",
+  "Penulis": "Sabda Armandio",
+  "Penerbit": "Mojok",
+  "Kondisi": "Baik",
+  "Ketersediaan": "Tersedia",
+  "Kode": "H",
+  "imageUrl": "/images/novel4.jpg",
+  "isPopular": false,
+  "pilihanBuku": [
+    {
+      "_id": "asd1293uasdads1",
+      "name": "Pilihan Buku Nonfiksi",
+      "items": [
+        {
+          "_id": "9786025868504",
+          "Judul": "Enaknya Berdebat dengan Orang Goblok",
+          "Bahasa": "Indonesia",
+          "Genre": "Nonfiksi",
+          "Penulis": "Puthut EA",
+          "Penerbit": "Shira Media",
+          "Kondisi": "Baik",
+          "Ketersediaan": "Tersedia",
+          "Kode": "WA",
+          "isPopular": true,
+          "imageUrl": "/images/nonfiksi1.jpg"
+        },
+        {
+          "_id": "9786021318133",
+          "Judul": "Melawat ke Timur",
+          "Bahasa": "Indonesia",
+          "Genre": "Nonfiksi",
+          "Penulis": "Kardono Setyorakhmadi",
+          "Penerbit": "Mojok",
+          "Kondisi": "Baik",
+          "Ketersediaan": "Tersedia",
+          "Kode": "WA",
+          "isPopular": false,
+          "imageUrl": "/images/nonfiksi2.jpg"
+        },
+        {
+          "_id": "9786020311111",
+          "Judul": "Migas the Untold Story",
+          "Bahasa": "Indonesia",
+          "Genre": "Nonfiksi",
+          "Penulis": "AM Putut Prabantoro",
+          "Penerbit": "Gramedia Pustaka Utama",
+          "Kondisi": "Baik",
+          "Ketersediaan": "Tersedia",
+          "Kode": "WA",
+          "isPopular": false,
+          "imageUrl": "/images/nonfiksi3.jpg"
+        },
+        {
+          "_id": "9786027306905",
+          "Judul": "Fenomenologi Wanita Ber-high heels",
+          "Bahasa": "Indonesia",
+          "Genre": "Nonfiksi",
+          "Penulis": "Ika Noorharini",
+          "Penerbit": "PT Artha Kencana Mandiri",
+          "Kondisi": "Baik",
+          "Ketersediaan": "Tersedia",
+          "Kode": "Spasso Cafe",
+          "isPopular": false,
+          "imageUrl": "/images/nonfiksi4.jpg"
+        }
+      ]
+    }
+  ]
+}

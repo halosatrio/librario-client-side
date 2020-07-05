@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import IcontText from "components/iconText";
-import Button from "components/Button";
+import Button from "components/common/Button";
 
 class NavBar extends Component {
   constructor(props) {
@@ -31,8 +31,20 @@ class NavBar extends Component {
       ? "navbar-toggler navbar-toggler-right collapsed"
       : "navbar-toggler navbar-toggler-right";
 
+    if (this.props.isCentered) {
+      return (
+        <nav className="navbar navbar-expand-lg navbar-light py-3">
+          <div className="container">
+            <div className="navbar-brand mx-auto">
+              <IcontText />
+            </div>
+          </div>
+        </nav>
+      );
+    }
+
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark transparent-nav">
+      <nav className="navbar navbar-expand-lg navbar-light py-3">
         <div className="container">
           <div className="navbar-brand">
             <IcontText />

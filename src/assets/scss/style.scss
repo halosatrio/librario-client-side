@@ -7,6 +7,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400,500,700&display=swap");
 
+@import "colorVariables";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -50,69 +51,89 @@
   font-size: 26px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  color: $teal;
+  color: $cyan;
   &:hover {
-    color: $teal;
+    color: $cyan;
     text-decoration: none;
   }
 }
 
-/* Jumbotron */
+// NavBar
+.navbar {
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid $gray-200;
+
+  ul.navbar-nav {
+    li.nav-item {
+      &.active {
+        a.nav-link {
+          color: $cyan;
+        }
+      }
+      a {
+        &.nav-link {
+          letter-spacing: 1px;
+          color: $gray-900;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Jumbotron - Hero */
+.hero {
+  .img-hero {
+    img {
+      height: 450px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      border-radius: 20px;
+    }
+  }
+}
+
 .jumbotron {
-  background: url(../images/hero.jpeg);
+  background: url(../images/hero1.jpg);
   background-size: cover;
-  background-position-y: -120px;
+  background-position: center;
   height: 540px;
   position: relative;
-  z-index: -1;
+  // z-index: -1;
 
   &:after {
     content: "";
     display: block;
     position: absolute;
     width: 100%;
-    height: 50%;
-    background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0)
-    );
+    height: 100%;
+    background-color: rgba($color: $cyan, $alpha: 0.7);
     bottom: 0;
   }
 
   .container {
-    color: white;
+    color: $light;
     text-align: center;
     position: relative;
     z-index: 1;
-  }
 
-  .display-4 {
-    font-weight: 200;
-    font-size: 2.6em;
-    margin-top: 50px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    margin-bottom: 50px;
-  }
-}
+    .lead {
+      font-size: 15px;
+    }
 
-/* Info Panel */
-.info-panel {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+    .button {
+      z-index: 3;
+    }
 
-  img {
-    height: 70px;
-  }
-
-  h4 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 20px;
-    text-transform: uppercase;
-    color: #acacac;
+    p.icon {
+      font-size: 14px;
+      font-weight: 500;
+    }
   }
 }
 
@@ -131,7 +152,7 @@ h3.rekomendasi {
   .tag {
     z-index: 3;
     font-size: 0.875rem;
-    background-color: $pink;
+    background-color: $yellow;
     padding: 0.25rem 1.25rem;
     position: absolute;
     top: 0;
@@ -153,17 +174,99 @@ h3.rekomendasi {
   }
 
   .meta-wrapper {
+    font-family: "Poppins" sans-serif;
     margin-top: 1rem;
     h5 {
+      color: $gray-800;
       font-size: 1.125rem;
       margin-bottom: 2px;
     }
     span {
+      color: $gray-500;
       font-size: 0.875rem;
     }
   }
 }
 /*  PILIHAN BUKU END */
+
+/*  KATALOG BANNER */
+.katalog-banner {
+  img {
+    border-radius: 70px 15px 70px 15px;
+  }
+  p {
+    color: $gray-500;
+  }
+}
+/*  KATALOG BANNER END */
+
+/* KATALOG PAGE */
+.katalog-buku {
+  .card {
+    border: 1px solid $gray-300;
+  }
+}
+
+/* DETAIL PAGE */
+.title-page {
+  margin-bottom: 60px;
+}
+
+.deskripsi-buku {
+  .table {
+    th {
+      font-weight: 500;
+      color: $gray-800;
+    }
+    td {
+      color: $gray-600;
+    }
+  }
+}
+
+.input-date {
+  .input-group {
+    background-color: $white;
+    .input-group-text {
+      pointer-events: none;
+      border: 0;
+      cursor: pointer;
+      padding: 0;
+      border-radius: 4px !important;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      background-color: $gray-900;
+      position: absolute;
+      z-index: 999;
+    }
+    .form-control {
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      box-shadow: none;
+      background-color: $gray-100;
+      padding: 0.575rem 45px;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      height: 45px;
+    }
+  }
+}
+/* DETAIL PAGE END */
+
+/* USER GUIDE PAGE */
+.user-guide {
+  h5 {
+    color: $gray-800;
+  }
+  ol {
+    color: $gray-600;
+  }
+}
+/* USER GUIDE PAGE END*/
 
 /* FOOTER */
 footer {

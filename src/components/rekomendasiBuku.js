@@ -1,9 +1,9 @@
 import React from "react";
-import Button from "components/Button";
+import Button from "components/common/Button";
 
 const RekomendasiBuku = (props) => {
   return (
-    <section className="container mb-4">
+    <section className="container mb-4" ref={props.refPilihanBuku}>
       <h4 className="mb-3 font-weight-medium text-center">Rekomendasi Buku</h4>
       <div className="row">
         {props.data.map((item, index) => {
@@ -25,11 +25,11 @@ const RekomendasiBuku = (props) => {
                   <Button
                     type="link"
                     href={`/properties/${item._id}`}
-                    className="stretched-link d-block text-gray-800"
+                    className="stretched-link d-block"
                   >
                     <h5>{item.Judul}</h5>
-                    <span className="text-gray-500">{item.Penulis}</span>
                   </Button>
+                  <span>{item.Penulis}</span>
                 </div>
               </div>
             </div>

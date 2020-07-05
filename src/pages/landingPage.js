@@ -5,10 +5,16 @@ import Footer from "components/footer";
 import Jumbotron from "components/jumbotron";
 import RekomendasiBuku from "components/rekomendasiBuku";
 import PilihanBuku from "components/pilihanBuku";
+import KatalogBanner from "components/katalogBanner";
 
 import landingPage from "json/landingPage.json";
 
 class LandingPage extends Component {
+  constructor(props) {
+    super(props);
+    this.refPilihanBuku = React.createRef();
+  }
+
   componentDidMount() {
     window.title = "Librario | Home";
     window.scrollTo(0, 0);
@@ -18,9 +24,13 @@ class LandingPage extends Component {
     return (
       <>
         <NavBar {...this.props} />
-        <Jumbotron />
-        <RekomendasiBuku data={landingPage.rekomendasiBuku} />
+        <Jumbotron refPilihanBuku={this.refPilihanBuku} />
+        <RekomendasiBuku
+          refPilihanBuku={this.refPilihanBuku}
+          data={landingPage.rekomendasiBuku}
+        />
         <PilihanBuku data={landingPage.pilihanBuku} />
+        <KatalogBanner />
         <Footer />
       </>
     );

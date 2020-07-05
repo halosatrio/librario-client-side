@@ -1,6 +1,6 @@
 import React from "react";
 import IconText from "./iconText";
-import Button from "components/Button";
+import Button from "components/common/Button";
 
 const Footer = () => {
   return (
@@ -13,12 +13,12 @@ const Footer = () => {
               Wadah perpustakaan kolektif dan media literasi daring.
             </p>
           </div>
-          <div className="col-sm-7 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-4 text-center text-sm-left">
-            <h6 className="mt-2">Online Library</h6>
+          <div className="col-sm-7 col-md-3 offset-md-1 col-lg-3 offset-lg-2 mb-4 text-center text-sm-left">
+            <h6 className="mt-2">Perpustakaan Kolektif</h6>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
                 <Button type="link" href="/register">
-                  New Account
+                  Daftar Anggota
                 </Button>
               </li>
               <li className="list-group-item">
@@ -33,8 +33,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-sm-5 col-md-4 col-lg-3 offset-lg-2 text-center text-sm-left">
-            <h6 className="mt-2">Get in Touch</h6>
+          <div className="col-sm-5 col-md-4 col-lg-3 offset-lg-1 text-center text-sm-left">
+            <h6 className="mt-2">Hubungi Kami</h6>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
                 <Button

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "components/Button";
+import Button from "components/common/Button";
 
 const PilihanBuku = ({ data }) => {
   return data.map((pilihan, index1) => {
@@ -21,7 +21,7 @@ const PilihanBuku = ({ data }) => {
                   className="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-0 mb-4"
                 >
                   <div className="card">
-                    {item.isPopular && <div className="tag">Popular </div>}
+                    {item.isPopular && <div className="tag">Populer</div>}
                     <figure className="img-wrapper" style={{ maxHeight: 300 }}>
                       <img
                         src={item.imageUrl}
@@ -33,11 +33,11 @@ const PilihanBuku = ({ data }) => {
                       <Button
                         type="link"
                         href={`/properties/${item._id}`}
-                        className="stretched-link d-block text-gray-800"
+                        className="stretched-link d-block"
                       >
                         <h5>{item.Judul}</h5>
-                        <span className="text-gray-500">{item.Penulis}</span>
                       </Button>
+                      <span>{item.Penulis}</span>
                     </div>
                   </div>
                 </div>
