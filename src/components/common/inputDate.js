@@ -19,7 +19,7 @@ const InputDate = (props) => {
           </span>
         </div>
         <DatePicker
-          dateFormat="dd MMMM, yyyy"
+          dateFormat="dd MMM, yyyy"
           selected={startDate}
           onChange={(date) => setStartDate(date)}
           className="form-control"

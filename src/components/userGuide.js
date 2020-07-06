@@ -1,18 +1,13 @@
 import React from "react";
-import Button from "components/common/Button";
+import Button from "components/common/button";
 
 const UserGuide = () => {
   return (
     <div className="container my-4 user-guide">
       <div className="row justify-content-center">
         <div className="col-10">
-          <h1 className="text-center font-weight-bold">
-            {`User Guide  `}
-            <span className="font-weight-normal">|</span>
-            {`  Rule of the Game`}
-          </h1>
           {/* SECTION PEMINJAM BUKU */}
-          <h3 className="mt-5 mb-3 text-gray-800" style={{ marginLeft: -30 }}>
+          <h3 className="mb-3 text-gray-800" style={{ marginLeft: -30 }}>
             Peminjam Buku
           </h3>
           <h5>syarat:</h5>

@@ -208,10 +208,6 @@ h3.rekomendasi {
 }
 
 /* DETAIL PAGE */
-.title-page {
-  margin-bottom: 60px;
-}
-
 .deskripsi-buku {
   .table {
     th {
@@ -267,6 +263,61 @@ h3.rekomendasi {
   }
 }
 /* USER GUIDE PAGE END*/
+
+/* FORM PAGE*/
+.jumbotron-form {
+  background: url(../images/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+}
+
+/* Input Text Component*/
+.input-text {
+  margin-bottom: 20px;
+  position: relative;
+  .input-group {
+    background-color: $white;
+    .input-group-text {
+      pointer-events: none;
+      border: 0;
+      cursor: auto;
+      padding: 0;
+      border-radius: 4px !important;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      background-color: $gray-900;
+      position: absolute;
+      z-index: 999;
+    }
+    .form-control {
+      border: 0;
+      border-radius: 4px;
+      outline: 0;
+      box-shadow: none;
+      background-color: $gray-100;
+      padding: 0.575rem 14px;
+      width: 100%;
+      height: 45px;
+      &::placeholder {
+        color: $gray-200;
+      }
+    }
+  }
+  .error-helper {
+    position: absolute;
+    top: 45px;
+    background-color: $red;
+    color: $white;
+    padding: 0 2px;
+    font-size: 0.675rem;
+  }
+}
+
+/* FORM PAGE END*/
 
 /* FOOTER */
 footer {

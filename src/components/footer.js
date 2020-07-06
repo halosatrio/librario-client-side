@@ -1,6 +1,6 @@
 import React from "react";
 import IconText from "./iconText";
-import Button from "components/common/Button";
+import Button from "components/common/button";
 
 const Footer = () => {
   return (

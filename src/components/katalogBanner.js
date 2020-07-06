@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "components/common/Button";
+import Button from "components/common/button";
 
 import bannerImage from "assets/images/katalog-banner.jpg";
 

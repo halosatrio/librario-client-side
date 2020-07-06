@@ -1,17 +1,11 @@
 import React from "react";
 
-import Button from "./common/Button";
-import InputDate from "./inputDate";
+import Button from "./common/button";
+import InputDate from "./common/inputDate";
 
 const DetailBuku = ({ data }) => {
   return (
     <section className="main">
-      {/* TITLE PAGE */}
-      <div className="container text-center">
-        <h1 className="title-page font-weight-bold">{data.Judul}</h1>
-      </div>
-      {/* TITLE PAGE END */}
-
       <div className="container mb-5">
         <div className="row justify-content-around">
           {/* FEATURED IMAGE */}

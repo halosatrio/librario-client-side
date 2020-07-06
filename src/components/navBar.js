@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import IcontText from "components/iconText";
-import Button from "components/common/Button";
+import Button from "components/common/button";
 
 class NavBar extends Component {
   constructor(props) {
@@ -35,9 +35,7 @@ class NavBar extends Component {
       return (
         <nav className="navbar navbar-expand-lg navbar-light py-3">
           <div className="container">
-            <div className="navbar-brand mx-auto">
-              <IcontText />
-            </div>
+            <IcontText className="mx-auto" />
           </div>
         </nav>
       );
@@ -46,9 +44,7 @@ class NavBar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light py-3">
         <div className="container">
-          <div className="navbar-brand">
-            <IcontText />
-          </div>
+          <IcontText />
           <button
             onClick={this.toggleNavbar}
             className={`${classTwo}`}
