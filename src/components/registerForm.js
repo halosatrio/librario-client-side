@@ -16,7 +16,7 @@ const RegisterForm = (props) => {
         <div className="container"></div>
       </div>
       <div className="d-block d-md-none container px-5">
-        <Fade delay={300}>
+        <Fade delay={500}>
           <h4 className="font-weight-light my-5">Daftar Anggota</h4>
           <label htmlFor="name">Nama Lengkap</label>
           <InputText

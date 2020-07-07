@@ -5,7 +5,7 @@ import DetailBuku from "components/detailBuku";
 import Breadcrumb from "components/breadcrumb";
 import Footer from "components/footer";
 import PilihanBuku from "components/pilihanBuku";
-import KatalogBanner from "components/katalogBanner";
+import BannerKatalog from "components/bannerKatalog";
 import TitleText from "components/common/titleText";
 
 import itemDetails from "json/itemDetails.json";
@@ -29,7 +29,7 @@ class DetailsPage extends Component {
         <TitleText isBold>{itemDetails.Judul}</TitleText>
         <DetailBuku data={itemDetails} />
         <PilihanBuku data={itemDetails.pilihanBuku} />
-        <KatalogBanner />
+        <BannerKatalog />
         <Footer />
       </>
     );

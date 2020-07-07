@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import propTypes from "prop-types";
 
 const TitleText = (props) => {
@@ -6,11 +7,13 @@ const TitleText = (props) => {
   if (props.isBold) className.push("font-weight-bold");
 
   return (
-    <div className="container text-center">
-      <h1 className={className.join(" ")} style={{ marginBottom: 60 }}>
-        {props.children}
-      </h1>
-    </div>
+    <Fade bottom>
+      <div className="container text-center">
+        <h1 className={className.join(" ")} style={{ marginBottom: 60 }}>
+          {props.children}
+        </h1>
+      </div>
+    </Fade>
   );
 };
 

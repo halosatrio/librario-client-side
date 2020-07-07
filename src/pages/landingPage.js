@@ -5,7 +5,7 @@ import Footer from "components/footer";
 import Jumbotron from "components/jumbotron";
 import RekomendasiBuku from "components/rekomendasiBuku";
 import PilihanBuku from "components/pilihanBuku";
-import KatalogBanner from "components/katalogBanner";
+import BannerKatalog from "components/bannerKatalog";
 
 import landingPage from "json/landingPage.json";
 
@@ -30,7 +30,7 @@ class LandingPage extends Component {
           data={landingPage.rekomendasiBuku}
         />
         <PilihanBuku data={landingPage.pilihanBuku} />
-        <KatalogBanner />
+        <BannerKatalog />
         <Footer />
       </>
     );
