@@ -4,9 +4,9 @@ import Button from "./common/button";
 
 const Breadcrumb = (props) => {
   return (
-    <div class="container my-4">
+    <div className="container my-4">
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-transparent">
+        <ol className="breadcrumb bg-transparent">
           {props.data.map((item, index) => {
             return (
               <li

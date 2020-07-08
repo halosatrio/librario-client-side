@@ -7,11 +7,18 @@ import KatalogBuku from "./../components/katalogBuku";
 
 class KatalogPage extends Component {
   state = {};
+
+  componentDidMount() {
+    window.title = "Librario | Katalog";
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const breadcrumb = [
       { pageTitle: "Home", pageHref: "/" },
       { pageTitle: "Katalog Buku", pageHref: "" },
     ];
+
     return (
       <>
         <NavBar {...this.props} />
