@@ -48,11 +48,11 @@ const InputFile = (props) => {
   );
 };
 
-File.defaultProp = {
+InputFile.defaultProps = {
   placeholder: "Browse a file...",
 };
 
-File.propTypes = {
+InputFile.propTypes = {
   name: propTypes.string.isRequired,
   accept: propTypes.string.isRequired,
   value: propTypes.string.isRequired,

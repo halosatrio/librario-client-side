@@ -38,7 +38,7 @@ const RegisterForm = (props) => {
           <InputText
             id="password"
             name="password"
-            type="tel"
+            type="password"
             value={data.password}
             onChange={props.onChange}
           />

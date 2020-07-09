@@ -67,14 +67,14 @@ const InputText = (props) => {
   );
 };
 
-Text.defaultProps = {
+InputText.defaultProps = {
   type: "text",
   pattern: "",
   placeholder: "Please type here...",
   errorResponse: "Please match the requested format.",
 };
 
-Text.propTypes = {
+InputText.propTypes = {
   name: propTypes.string.isRequired,
   value: propTypes.oneOfType([propTypes.number, propTypes.string]).isRequired,
   onChange: propTypes.func.isRequired,
