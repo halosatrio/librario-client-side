@@ -12,12 +12,10 @@ const RegisterForm = (props) => {
 
   return (
     <>
-      <div className="jumbotron-form jumbotron-fluid d-block d-md-none">
-        <div className="container"></div>
-      </div>
-      <div className="d-block d-md-none container px-5">
+      <div className="jumbotron-form jumbotron-fluid d-block d-md-none" />
+      <div className="d-block d-md-none container px-5 my-5">
         <Fade delay={500}>
-          <h4 className="font-weight-light my-5">Daftar Anggota</h4>
+          <h4 className="font-weight-light mb-5">Daftar Anggota</h4>
           <label htmlFor="name">Nama Lengkap</label>
           <InputText
             id="name"
@@ -102,7 +100,7 @@ const RegisterForm = (props) => {
               <InputText
                 id="password"
                 name="password"
-                type="tel"
+                type="password"
                 value={data.password}
                 onChange={props.onChange}
               />

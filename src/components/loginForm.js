@@ -11,12 +11,10 @@ const LoginForm = (props) => {
 
   return (
     <>
-      <div className="jumbotron-form jumbotron-fluid d-block d-md-none">
-        <div className="container"></div>
-      </div>
-      <div className="d-block d-md-none container px-5">
+      <div className="jumbotron-form jumbotron-fluid d-block d-md-none" />
+      <div className="d-block d-md-none container px-5 my-5">
         <Fade delay={500}>
-          <h4 className="font-weight-light my-5">Login</h4>
+          <h4 className="font-weight-light mb-5">Login</h4>
           <label htmlFor="email">Email</label>
           <InputText
             id="email"
@@ -29,7 +27,7 @@ const LoginForm = (props) => {
           <InputText
             id="password"
             name="password"
-            type="tel"
+            type="password"
             value={data.password}
             onChange={props.onChange}
           />
@@ -54,7 +52,7 @@ const LoginForm = (props) => {
             className="btn btn-info py-2"
             href="/register"
             isBlock
-            style={{ width: 200, marginBottom: 50 }}
+            style={{ width: 200 }}
           >
             Daftar Sekarang
           </Button>
@@ -92,7 +90,7 @@ const LoginForm = (props) => {
               <InputText
                 id="password"
                 name="password"
-                type="tel"
+                type="password"
                 value={data.password}
                 onChange={props.onChange}
               />
