@@ -1,0 +1,26 @@
+[
+  {
+    "nama": "Dana",
+    "logo": "images/logo/dana.png",
+    "rekening": "087834878811",
+    "atasNama": "Librario"
+  },
+  {
+    "nama": "OVO",
+    "logo": "images/logo/ovo.png",
+    "rekening": "087834878811",
+    "atasNama": "Librario"
+  },
+  {
+    "nama": "Gopay",
+    "logo": "images/logo/gopay.png",
+    "rekening": "087834878811",
+    "atasNama": "Librario"
+  },
+  {
+    "nama": "Jenius",
+    "logo": "images/logo/jenius.png",
+    "rekening": "2208 1996 / $librario",
+    "atasNama": "Librario"
+  }
+]
