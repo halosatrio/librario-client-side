@@ -10,27 +10,27 @@ const BookDetail = ({ data }) => {
         <tbody>
           <tr>
             <th>Judul</th>
-            <td>{data.Judul}</td>
+            <td>{data.judul}</td>
           </tr>
           <tr>
             <th>Penulis</th>
-            <td>{data.Penulis}</td>
+            <td>{data.penulis}</td>
           </tr>
           <tr>
             <th>Penerbit</th>
-            <td>{data.Penerbit}</td>
+            <td>{data.penerbit}</td>
           </tr>
           <tr>
             <th>Genre</th>
-            <td>{data.Genre}</td>
+            <td>{data.genre}</td>
           </tr>
           <tr>
             <th>ISBN</th>
-            <td>{data._id}</td>
+            <td>{data.isbn}</td>
           </tr>
           <tr>
             <th>Kondisi</th>
-            <td>{data.Kondisi}</td>
+            <td>{data.kondisi}</td>
           </tr>
         </tbody>
       </table>

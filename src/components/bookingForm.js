@@ -16,17 +16,21 @@ const BookingForm = ({ data }) => {
           Buku{" "}
           <span
             className={`mt-3 badge font-weight-normal ${
-              data.Ketersediaan === "Tersedia" ? "badge-info" : "badge-danger"
+              data.ketersediaan === "Tersedia" ? "badge-info" : "badge-danger"
             }`}
             style={{ fontSize: 14 }}
           >
-            {data.Ketersediaan}
+            {data.ketersediaan}
           </span>{" "}
         </h6>
         <h6 className="text-gray-600 font-weight-light mb-4">
           Droppping Point: Spasso Cafe
         </h6>
-        <Button href="/checkout" type="link" className="btn btn-primary">
+        <Button
+          href={`/checkout/${data._id}`}
+          type="link"
+          className="btn btn-primary"
+        >
           Pinjam Buku
         </Button>
       </div>

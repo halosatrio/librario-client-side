@@ -5,17 +5,24 @@ import TitleText from "components/common/titleText";
 import BookingInformation from "components/bookingInformation";
 import Button from "components/common/button";
 
-import itemDetails from "json/itemDetails.json";
+// import itemDetails from "json/itemDetails.json";
+
+import { getBook } from "./../services/BookService";
 
 class CheckoutPage extends Component {
   state = {
-    data: {
+    checkoutData: {
       name: "",
       email: "",
       phone: "",
       proofPayment: "",
       bankName: "",
       bankHolder: "",
+    },
+    bookData: {
+      judul: "",
+      penulis: "",
+      imageUrl: "",
     },
   };
 
@@ -30,10 +37,25 @@ class CheckoutPage extends Component {
 
   componentDidMount() {
     window.scroll(0, 0);
+
+    const bookId = this.props.match.params.id;
+
+    const book = getBook(bookId);
+
+    this.setState({ bookData: this.mapToViewModel(book) });
+  }
+
+  mapToViewModel(book) {
+    return {
+      _id: book._id,
+      judul: book.judul,
+      penulis: book.penulis,
+      imageUrl: book.imageUrl,
+    };
   }
 
   render() {
-    const { data } = this.state;
+    const { checkoutData, bookData } = this.state;
 
     return (
       <>
@@ -43,8 +65,8 @@ class CheckoutPage extends Component {
           <p className="lead text-gray-500 mt-2">Lengkapi form di bawah</p>
         </TitleText>
         <BookingInformation
-          data={data}
-          ItemDetails={itemDetails}
+          checkout={checkoutData}
+          book={bookData}
           onChange={this.onChange}
         />
         <div className="d-flex justify-content-center mb-3">

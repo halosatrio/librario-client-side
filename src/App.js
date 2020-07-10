@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       <Router>
         <Route exact path="/" component={LandingPage}></Route>
-        <Route exact path="/properties/:id" component={DetailsPage}></Route>
+        <Route exact path="/books/:id" component={DetailsPage}></Route>
         <Route exact path="/catalogue" component={KatalogPage}></Route>
         <Route exact path="/user-guide" component={UserGuidePage}></Route>
-        <Route exact path="/checkout" component={CheckoutPage}></Route>
+        <Route exact path="/checkout/:id" component={CheckoutPage}></Route>
         <Route exact path="/login" component={LoginPage}></Route>
         <Route exact path="/register" component={RegisterPage}></Route>
       </Router>

@@ -1,6 +1,8 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
+import Button from "./button";
+
 const ListBuku = ({ items }) => {
   return (
     <Fade>
@@ -8,16 +10,22 @@ const ListBuku = ({ items }) => {
         {items.map((book, index) => {
           return (
             <div
-              key={`buku-${index}`}
+              key={index}
               className="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-0 mb-5"
             >
               <div className="card">
                 <figure className="img-wrapper" style={{ maxHeight: 300 }}>
-                  <img
-                    src={book.imageUrl}
-                    alt={book.judul}
-                    className="img-fluid"
-                  />
+                  <Button
+                    type="link"
+                    href={`/books/${book._id}`}
+                    className="stretched-link d-block"
+                  >
+                    <img
+                      src={book.imageUrl}
+                      alt={book.judul}
+                      className="img-fluid"
+                    />
+                  </Button>
                 </figure>
               </div>
             </div>

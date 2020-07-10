@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import InputText from "./common/inputText";
 
 const BookingInformation = (props) => {
-  const { data, ItemDetails } = props;
+  const { checkout, book } = props;
 
   return (
     <div className="container">
@@ -20,14 +20,14 @@ const BookingInformation = (props) => {
             <div className="card">
               <figure className="img-wrapper" style={{ height: 400 }}>
                 <img
-                  src={ItemDetails.imageUrl}
-                  alt={ItemDetails.Judul}
+                  src={book.imageUrl}
+                  alt={book.judul}
                   className="img-fluid"
                 />
               </figure>
               <div className="meta-wrapper pr-5">
-                <h5>{ItemDetails.Judul}</h5>
-                <span className="text-gray-500">{ItemDetails.Penulis}</span>
+                <h5>{book.judul}</h5>
+                <span className="text-gray-500">{book.penulis}</span>
               </div>
             </div>
           </Fade>
@@ -54,7 +54,7 @@ const BookingInformation = (props) => {
             <InputText
               id="name"
               name="name"
-              value={data.name}
+              value={checkout.name}
               onChange={props.onChange}
             />
 
@@ -63,7 +63,7 @@ const BookingInformation = (props) => {
               id="email"
               name="email"
               type="email"
-              value={data.email}
+              value={checkout.email}
               onChange={props.onChange}
             />
 
@@ -72,7 +72,7 @@ const BookingInformation = (props) => {
               id="phone"
               name="phone"
               type="tel"
-              value={data.phone}
+              value={checkout.phone}
               onChange={props.onChange}
             />
           </Fade>
