@@ -3,8 +3,6 @@ import React, { Component } from "react";
 import NavBar from "components/navBar";
 import Footer from "components/footer";
 import Breadcrumb from "components/breadcrumb";
-// import KatalogBuku from "./../components/katalogBuku";
-
 import Pagination from "components/common/pagination";
 import ListGenre from "components/common/listGenre";
 import ListBuku from "components/common/listBuku";

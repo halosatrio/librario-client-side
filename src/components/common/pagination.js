@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import Fade from "react-reveal/Fade";
 import _ from "lodash";
 import propTypes from "prop-types";
 
@@ -12,7 +13,7 @@ const Pagination = (props) => {
   const pages = _.range(1, pagesCount + 1);
 
   return (
-    <nav>
+    <Fade delay={600}>
       <ul className="pagination">
         {pages.map((page, index) => (
           <li
@@ -25,7 +26,7 @@ const Pagination = (props) => {
           </li>
         ))}
       </ul>
-    </nav>
+    </Fade>
   );
 };
 
