@@ -3,14 +3,15 @@ import React, { Component } from "react";
 import NavBar from "components/navBar";
 import Breadcrumb from "components/breadcrumb";
 import Footer from "components/footer";
-import PilihanBuku from "components/pilihanBuku";
+// import PilihanBuku from "components/pilihanBuku";
 import BannerKatalog from "components/bannerKatalog";
 import TitleText from "components/common/titleText";
 import BookImage from "./../components/bookImage";
 import BookDetail from "./../components/bookDetail";
 import BookingForm from "./../components/bookingForm";
 
-import itemDetails from "json/itemDetails.json";
+// import itemDetails from "json/itemDetails.json";
+// import itemDetails from "json/landingPage.json";
 
 import { getBook } from "./../services/BookService";
 
@@ -77,7 +78,7 @@ class DetailsPage extends Component {
             </div>
           </div>
         </section>
-        <PilihanBuku data={itemDetails.pilihanBuku} />
+        {/* <PilihanBuku data={itemDetails.pilihanBuku} /> */}
         <BannerKatalog />
         <Footer />
       </>

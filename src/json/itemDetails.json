@@ -1,71 +1,75 @@
 {
-  "_id": "9786021318485",
-  "Judul": "24 Jam Bersama Gaspar, Sebuah Cerita Detektif",
-  "Bahasa": "Indonesia",
-  "Genre": "Novel",
-  "Penulis": "Sabda Armandio",
-  "Penerbit": "Mojok",
-  "Kondisi": "Baik",
-  "Ketersediaan": "Tersedia",
-  "Kode": "H",
-  "imageUrl": "/images/novel4.jpg",
-  "isPopular": false,
   "pilihanBuku": [
     {
-      "_id": "asd1293uasdads1",
       "name": "Pilihan Buku Nonfiksi",
       "items": [
         {
-          "_id": "9786025868504",
-          "Judul": "Enaknya Berdebat dengan Orang Goblok",
-          "Bahasa": "Indonesia",
-          "Genre": "Nonfiksi",
-          "Penulis": "Puthut EA",
-          "Penerbit": "Shira Media",
-          "Kondisi": "Baik",
-          "Ketersediaan": "Tersedia",
-          "Kode": "WA",
+          "_id": "5f041fa96327a95b23cb1523",
+          "isbn": "9786025868504",
+          "judul": "Enaknya Berdebat dengan Orang Goblok",
+          "bahasa": "Indonesia",
+          "genre": {
+            "_id": "5f0405eaa6046c3a222514be",
+            "name": "Nonfiksi"
+          },
+          "penulis": "Puthut EA",
+          "penerbit": "Shira Media",
+          "kondisi": "Baik",
+          "ketersediaan": "Tersedia",
+          "imageUrl": "/images/nonfiksi-enaknya-berdebat.jpg",
           "isPopular": true,
-          "imageUrl": "/images/nonfiksi1.jpg"
+          "kode": "WA"
         },
         {
-          "_id": "9786021318133",
-          "Judul": "Melawat ke Timur",
-          "Bahasa": "Indonesia",
-          "Genre": "Nonfiksi",
-          "Penulis": "Kardono Setyorakhmadi",
-          "Penerbit": "Mojok",
-          "Kondisi": "Baik",
-          "Ketersediaan": "Tersedia",
-          "Kode": "WA",
+          "_id": "5f041fc3dda489a8bcdcbb5b",
+          "isbn": "9786021318133",
+          "judul": "Melawat ke Timur",
+          "bahasa": "Indonesia",
+          "genre": {
+            "_id": "5f0405eaa6046c3a222514be",
+            "name": "Nonfiksi"
+          },
+          "penulis": "Kardono Setyorakhmadi",
+          "penerbit": "Mojok",
+          "kondisi": "Baik",
+          "ketersediaan": "Tersedia",
+          "imageUrl": "/images/nonfiksi-melawat-ke-timur.jpg",
           "isPopular": false,
-          "imageUrl": "/images/nonfiksi2.jpg"
+          "kode": "WA"
         },
         {
-          "_id": "9786020311111",
-          "Judul": "Migas the Untold Story",
-          "Bahasa": "Indonesia",
-          "Genre": "Nonfiksi",
-          "Penulis": "AM Putut Prabantoro",
-          "Penerbit": "Gramedia Pustaka Utama",
-          "Kondisi": "Baik",
-          "Ketersediaan": "Tersedia",
-          "Kode": "WA",
+          "_id": "5f041fda2943f3e8f8c50edd",
+          "isbn": "9786020311111",
+          "judul": "Migas the Untold Story",
+          "bahasa": "Indonesia",
+          "genre": {
+            "_id": "5f0405eaa6046c3a222514be",
+            "name": "Nonfiksi"
+          },
+          "penulis": "AM Putut Prabantoro",
+          "penerbit": "Gramedia Pustaka Utama",
+          "kondisi": "Baik",
+          "ketersediaan": "Tersedia",
+          "imageUrl": "/images/nonfiksi-migas-story.jpg",
           "isPopular": false,
-          "imageUrl": "/images/nonfiksi3.jpg"
+          "kode": "WA"
         },
         {
-          "_id": "9786027306905",
-          "Judul": "Fenomenologi Wanita Ber-high heels",
-          "Bahasa": "Indonesia",
-          "Genre": "Nonfiksi",
-          "Penulis": "Ika Noorharini",
-          "Penerbit": "PT Artha Kencana Mandiri",
-          "Kondisi": "Baik",
-          "Ketersediaan": "Tersedia",
-          "Kode": "Spasso Cafe",
+          "_id": "5f04201d5f6ab46833bb3ade",
+          "isbn": "9786027306905",
+          "judul": "Fenomenologi Wanita Ber-high heels",
+          "bahasa": "Indonesia",
+          "genre": {
+            "_id": "5f0405eaa6046c3a222514be",
+            "name": "Nonfiksi"
+          },
+          "penulis": "Ika Noorharini",
+          "penerbit": "PT Artha Kencana Mandiri",
+          "kondisi": "Baik",
+          "ketersediaan": "Tersedia",
+          "imageUrl": "/images/nonfiksi-wanita-high-heels.jpg",
           "isPopular": false,
-          "imageUrl": "/images/nonfiksi4.jpg"
+          "kode": "Spasso Cafe"
         }
       ]
     }

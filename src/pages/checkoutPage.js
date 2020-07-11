@@ -5,8 +5,6 @@ import TitleText from "components/common/titleText";
 import BookingInformation from "components/bookingInformation";
 import Button from "components/common/button";
 
-// import itemDetails from "json/itemDetails.json";
-
 import { getBook } from "./../services/BookService";
 
 class CheckoutPage extends Component {
