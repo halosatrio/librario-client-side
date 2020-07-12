@@ -1,5 +1,5 @@
 import React from "react";
-import IconText from "./iconText";
+import IconText from "components/iconText";
 import Button from "components/common/button";
 
 const Footer = () => {

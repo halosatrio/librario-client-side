@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import InputText from "./common/inputText";
+import InputText from "components/common/inputText";
 
 const BookingInformation = (props) => {
   const { checkout, book } = props;

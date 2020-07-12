@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import Button from "./button";
+import Button from "components/common/button";
 
 const ListBuku = ({ items }) => {
   return (
