@@ -7,9 +7,9 @@ import Pagination from "components/common/pagination";
 import ListGenre from "components/common/listGenre";
 import ListBuku from "components/common/listBuku";
 
-import { getBooks } from "./../services/BookService";
-import { getGenres } from "./../services/GenreService";
-import { paginate } from "../utils/paginate";
+import { getBooks } from "services/BookService";
+import { getGenres } from "services/GenreService";
+import { paginate } from "utils/paginate";
 
 class KatalogPage extends Component {
   state = {
