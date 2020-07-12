@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import Button from "components/common/button";
+import Button from "./common/button";
 
 const PilihanBuku = ({ data }) => {
   return data.map((pilihan, index1) => {

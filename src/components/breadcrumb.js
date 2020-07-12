@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "components/common/button";
+import Button from "./common/button";
 
 const Breadcrumb = (props) => {
   return (

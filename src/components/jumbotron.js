@@ -1,12 +1,12 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import Button from "components/common/button";
+import Button from "./common/button";
 
-import heroImage from "assets/images/hero1.jpg";
-import iconBook from "assets/images/icon-book.png";
-import iconHouse from "assets/images/icon-house.png";
-import iconSocial from "assets/images/icon-social.png";
+import heroImage from "../assets/images/hero1.jpg";
+import iconBook from "../assets/images/icon-book.png";
+import iconHouse from "../assets/images/icon-house.png";
+import iconSocial from "../assets/images/icon-social.png";
 
 const Jumbotron = (props) => {
   function showPilihanBuku() {

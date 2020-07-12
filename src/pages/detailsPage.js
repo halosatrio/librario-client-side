@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 
-import NavBar from "components/navBar";
-import Breadcrumb from "components/breadcrumb";
-import Footer from "components/footer";
+import NavBar from "../components/navBar";
+import Breadcrumb from "../components/breadcrumb";
+import Footer from "../components/footer";
 
-import BannerKatalog from "components/bannerKatalog";
-import TitleText from "components/common/titleText";
-import BookImage from "components/bookImage";
-import BookDetail from "components/bookDetail";
-import BookingForm from "components/bookingForm";
+import BannerKatalog from "../components/bannerKatalog";
+import TitleText from "../components/common/titleText";
+import BookImage from "../components/bookImage";
+import BookDetail from "../components/bookDetail";
+import BookingForm from "../components/bookingForm";
 
-import { getBook } from "services/BookService";
+import { getBook } from "../services/BookService";
 
 class DetailsPage extends Component {
   state = {

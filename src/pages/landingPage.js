@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-import NavBar from "components/navBar";
-import Footer from "components/footer";
-import Jumbotron from "components/jumbotron";
-import RekomendasiBuku from "components/rekomendasiBuku";
-import PilihanBuku from "components/pilihanBuku";
-import BannerKatalog from "components/bannerKatalog";
+import NavBar from "../components/navBar";
+import Footer from "../components/footer";
+import Jumbotron from "../components/jumbotron";
+import RekomendasiBuku from "../components/rekomendasiBuku";
+import PilihanBuku from "../components/pilihanBuku";
+import BannerKatalog from "../components/bannerKatalog";
 
-import landingPage from "json/landingPage.json";
+import landingPage from "../json/landingPage.json";
 
 class LandingPage extends Component {
   constructor(props) {

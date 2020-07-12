@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import NavBar from "components/navBar";
-import RegisterForm from "components/registerForm";
+import NavBar from "../components/navBar";
+import RegisterForm from "../components/registerForm";
 
 class RegisterPage extends Component {
   state = {

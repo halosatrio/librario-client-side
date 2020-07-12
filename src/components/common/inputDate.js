@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 
-import iconCalendar from "assets/images/icon-calendar.svg";
+import iconCalendar from "../../assets/images/icon-calendar.svg";
 
 // CSS Modules, react-datepicker-cssmodules.css
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';

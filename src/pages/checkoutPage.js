@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-import NavBar from "components/navBar";
-import TitleText from "components/common/titleText";
-import BookingInformation from "components/bookingInformation";
-import Button from "components/common/button";
+import NavBar from "../components/navBar";
+import TitleText from "../components/common/titleText";
+import BookingInformation from "../components/bookingInformation";
+import Button from "../components/common/button";
 
-import { getBook } from "services/BookService";
+import { getBook } from "../services/BookService";
 
 class CheckoutPage extends Component {
   state = {

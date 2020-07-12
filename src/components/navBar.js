@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import IcontText from "components/iconText";
-import Button from "components/common/button";
+import IcontText from "./iconText";
+import Button from "./common/button";
 
 class NavBar extends Component {
   constructor(props) {

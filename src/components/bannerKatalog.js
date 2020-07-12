@@ -1,9 +1,9 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import Button from "components/common/button";
+import Button from "./common/button";
 
-import bannerImage from "assets/images/katalog-banner.jpg";
+import bannerImage from "../assets/images/katalog-banner.jpg";
 
 const BannerKatalog = () => {
   return (

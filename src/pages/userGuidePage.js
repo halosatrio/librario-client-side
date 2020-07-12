@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import NavBar from "components/navBar";
-import Footer from "components/footer";
-import UserGuide from "components/userGuide";
-import Breadcrumb from "components/breadcrumb";
-import TitleText from "components/common/titleText";
+import NavBar from "../components/navBar";
+import Footer from "../components/footer";
+import UserGuide from "../components/userGuide";
+import Breadcrumb from "../components/breadcrumb";
+import TitleText from "../components/common/titleText";
 
 class UserGuidePage extends Component {
   componentDidMount() {

@@ -1,11 +1,11 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import InputText from "components/common/inputText";
-import InputFile from "components/common/inputFile";
-import Button from "components/common/button";
+import InputText from "./common/inputText";
+import InputFile from "./common/inputFile";
+import Button from "./common/button";
 
-import items from "json/paymentItems.json";
+import items from "../json/paymentItems.json";
 
 const RegisterForm = (props) => {
   const { data } = props;

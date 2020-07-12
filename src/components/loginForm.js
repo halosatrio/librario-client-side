@@ -1,10 +1,10 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import InputText from "components/common/inputText";
-import Button from "components/common/button";
+import InputText from "./common/inputText";
+import Button from "./common/button";
 
-import heroImg from "assets/images/hero2.jpeg";
+import heroImg from "../assets/images/hero2.jpeg";
 
 const LoginForm = (props) => {
   const { data } = props;
