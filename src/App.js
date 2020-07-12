@@ -5,7 +5,7 @@ import LandingPage from "./pages/landingPage";
 import DetailsPage from "./pages/detailsPage";
 import UserGuidePage from "./pages/userGuidePage";
 import KatalogPage from "./pages/katalogPage";
-import CheckoutPage from "pages/checkoutPage";
+import CheckoutPage from "./pages/checkoutPage";
 import LoginPage from "./pages/loginPage";
 import RegisterPage from "./pages/registerPage";
 
