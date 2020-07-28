@@ -185,6 +185,7 @@
 
 /*  KATALOG BANNER */
 .katalog-banner {
+  z-index: -1;
   img {
     border-radius: 70px 15px 70px 15px;
   }
@@ -208,6 +209,7 @@
 }
 
 .input-date {
+  font-weight: 300;
   .input-group {
     background-color: $white;
     .input-group-text {

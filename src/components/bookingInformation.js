@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import InputText from "./common/inputText";
 
 const BookingInformation = (props) => {
-  const { checkout, book } = props;
+  const { checkoutData, book, checkout } = props;
 
   return (
     <div className="container">
@@ -47,14 +47,15 @@ const BookingInformation = (props) => {
                 className="font-weight-light badge badge-primary"
                 style={{ fontSize: "1.1rem" }}
               >
-                14 Jul - 28 Jul
+                {`${checkout.date.startDate.toDateString().slice(3, 10)} - 
+                  ${checkout.date.endDate.toDateString().slice(3, 10)}`}
               </span>
             </h5>
             <label htmlFor="name">Nama Lengkap</label>
             <InputText
               id="name"
               name="name"
-              value={checkout.name}
+              value={checkoutData.name}
               onChange={props.onChange}
             />
 
@@ -63,7 +64,7 @@ const BookingInformation = (props) => {
               id="email"
               name="email"
               type="email"
-              value={checkout.email}
+              value={checkoutData.email}
               onChange={props.onChange}
             />
 
@@ -72,7 +73,7 @@ const BookingInformation = (props) => {
               id="phone"
               name="phone"
               type="tel"
-              value={checkout.phone}
+              value={checkoutData.phone}
               onChange={props.onChange}
             />
           </Fade>

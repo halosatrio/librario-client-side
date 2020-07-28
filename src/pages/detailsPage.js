@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
+import { connect } from "react-redux";
 
 import NavBar from "../components/navBar";
 import Breadcrumb from "../components/breadcrumb";
 import Footer from "../components/footer";
-
 import BannerKatalog from "../components/bannerKatalog";
 import TitleText from "../components/common/titleText";
 import BookImage from "../components/bookImage";
@@ -12,9 +13,12 @@ import BookingForm from "../components/bookingForm";
 
 import { getBook } from "../services/BookService";
 
+import { checkoutBooking } from "../store/actions/checkout";
+
 class DetailsPage extends Component {
   state = {
     data: {
+      _id: "",
       isbn: "",
       judul: "",
       genre: "",
@@ -64,17 +68,22 @@ class DetailsPage extends Component {
         <NavBar {...this.props} />
         <Breadcrumb data={breadcrumb} />
         <TitleText isBold>{data.judul}</TitleText>
-        <section className="container mb-5">
-          <div className="row justify-content-around">
-            <div className="col-10 col-md-6 col-lg-6 col-xl-5 mb-4">
-              <BookImage data={data} />
+        <Fade delay={300}>
+          <section className="container mb-5">
+            <div className="row justify-content-around">
+              <div className="col-10 col-md-6 col-lg-6 col-xl-5 mb-4">
+                <BookImage data={data} />
+              </div>
+              <div className="deskripsi-buku col-11 col-md-6 col-lg-6 col-xl-5">
+                <BookDetail data={data} />
+                <BookingForm
+                  data={data}
+                  startBooking={this.props.checkoutBooking}
+                />
+              </div>
             </div>
-            <div className="deskripsi-buku col-11 col-md-6 col-lg-6 col-xl-5">
-              <BookDetail data={data} />
-              <BookingForm data={data} />
-            </div>
-          </div>
-        </section>
+          </section>
+        </Fade>
         {/* <PilihanBuku data={itemDetails.pilihanBuku} /> */}
         <BannerKatalog />
         <Footer />
@@ -83,4 +92,5 @@ class DetailsPage extends Component {
   }
 }
 
-export default DetailsPage;
+export default connect(null, { checkoutBooking })(DetailsPage);
+// export default DetailsPage;

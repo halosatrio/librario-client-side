@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 
 import NavBar from "../components/navBar";
 import Footer from "../components/footer";
@@ -22,11 +23,13 @@ class UserGuidePage extends Component {
       <>
         <NavBar {...this.props} />
         <Breadcrumb data={breadcrumb} />
-        <TitleText isBold className="px-4">
-          {`User Guide  `}
-          <span className="font-weight-normal">|</span>
-          {`  Rule of the Game`}
-        </TitleText>
+        <Fade bottom>
+          <TitleText isBold className="px-4">
+            {`User Guide  `}
+            <span className="font-weight-normal">|</span>
+            {`  Rule of the Game`}
+          </TitleText>
+        </Fade>
         <UserGuide />
         <Footer />
       </>

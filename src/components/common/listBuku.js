@@ -7,10 +7,10 @@ const ListBuku = ({ items }) => {
   return (
     <Fade>
       <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-5">
-        {items.map((book, index) => {
+        {items.map((book) => {
           return (
             <div
-              key={index}
+              key={book._id}
               className="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-0 mb-5"
             >
               <div className="card">

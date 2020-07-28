@@ -1,10 +1,9 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import propTypes from "prop-types";
 
 const BookDetail = ({ data }) => {
   return (
-    <Fade delay={500}>
+    <>
       <h3 className="mb-4 text-gray-800">Detail Buku</h3>
       <table className="table">
         <tbody>
@@ -34,7 +33,7 @@ const BookDetail = ({ data }) => {
           </tr>
         </tbody>
       </table>
-    </Fade>
+    </>
   );
 };
 

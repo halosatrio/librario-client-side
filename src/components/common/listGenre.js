@@ -23,7 +23,7 @@ class ListGenre extends Component {
       ? "btn btn-block text-left collapsed"
       : "btn btn-block text-left";
 
-    const { items, text, value, onItemSelect, selectedItem } = this.props;
+    const { items, onItemSelect, selectedItem } = this.props;
 
     return (
       <Fade>
@@ -53,9 +53,9 @@ class ListGenre extends Component {
               data-parent="#accordionGenre"
             >
               <ul className="list-group" style={{ borderRadius: 0 }}>
-                {items.map((item) => (
+                {items.map((item, index) => (
                   <li
-                    key={item[value]}
+                    key={index}
                     className={
                       item === selectedItem
                         ? "list-group-item active"
@@ -64,7 +64,7 @@ class ListGenre extends Component {
                     style={{ borderWidth: "1px 0 0 0" }}
                     onClick={() => onItemSelect(item)}
                   >
-                    {item[text]}
+                    {item.name}
                   </li>
                 ))}
               </ul>
@@ -73,9 +73,9 @@ class ListGenre extends Component {
         </div>
         <div className="d-none d-md-block col-md-3 col-lg-2 mb-5">
           <ul className="list-group">
-            {items.map((item) => (
+            {items.map((item, index) => (
               <li
-                key={item[value]}
+                key={index}
                 className={
                   item === selectedItem
                     ? "list-group-item active"
@@ -83,7 +83,7 @@ class ListGenre extends Component {
                 }
                 onClick={() => onItemSelect(item)}
               >
-                {item[text]}
+                {item.name}
               </li>
             ))}
           </ul>
@@ -92,10 +92,5 @@ class ListGenre extends Component {
     );
   }
 }
-
-ListGenre.defaultProps = {
-  text: "name",
-  value: "_id",
-};
 
 export default ListGenre;

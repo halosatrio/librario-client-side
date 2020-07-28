@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import NavBar from "../components/navBar";
 import TitleText from "../components/common/titleText";
@@ -13,9 +14,6 @@ class CheckoutPage extends Component {
       name: "",
       email: "",
       phone: "",
-      proofPayment: "",
-      bankName: "",
-      bankHolder: "",
     },
     bookData: {
       judul: "",
@@ -54,6 +52,23 @@ class CheckoutPage extends Component {
 
   render() {
     const { checkoutData, bookData } = this.state;
+    const { checkout } = this.props;
+
+    if (!checkout)
+      return (
+        <div className="container text-center mt-5">
+          <h1>Error 404</h1>
+          <Button
+            type="link"
+            className="btn py-2"
+            href="/"
+            isLight
+            style={{ width: 200 }}
+          >
+            Back to Home
+          </Button>
+        </div>
+      );
 
     return (
       <>
@@ -63,9 +78,10 @@ class CheckoutPage extends Component {
           <p className="lead text-gray-500 mt-2">Lengkapi form di bawah</p>
         </TitleText>
         <BookingInformation
-          checkout={checkoutData}
+          checkoutData={checkoutData}
           book={bookData}
           onChange={this.onChange}
+          checkout={checkout}
         />
         <div className="d-flex justify-content-center mb-3">
           <Button
@@ -96,4 +112,8 @@ class CheckoutPage extends Component {
   }
 }
 
-export default CheckoutPage;
+const mapStateToProps = (state) => ({
+  checkout: state.checkout,
+});
+
+export default connect(mapStateToProps)(CheckoutPage);
